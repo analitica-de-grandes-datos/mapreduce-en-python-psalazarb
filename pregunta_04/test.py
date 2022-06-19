@@ -5,11 +5,12 @@ result = os.popen("cat data.csv | python3 mapper.py | sort | python3 reducer.py"
 
 lines = [line.strip().replace("\n", "") for line in result.split("\n")]
 
-expected = """A,12
-B,10
-C,4
-D,1
-E,13
+expected = """d,1
+c,2
+a,3
+e,4
+f,5
+b,6
 """.split(
     "\n"
 )
